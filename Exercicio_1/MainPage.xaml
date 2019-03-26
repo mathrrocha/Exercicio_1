@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:local="clr-namespace:App3" 
+x:Class="App3.MainPage">
+
+
+    <StackLayout>
+        <Entry x:Name="Entry1" Placeholder="Matrícula" />
+        <Entry x:Name="Entry2" Keyboard="Numeric" Placeholder="Período" />
+        <Picker x:Name="Picker" Title="Disciplina">
+            <Picker.Items>
+                <x:String>1 - Cálculo</x:String>
+                <x:String>2 - Cálculo 2</x:String>
+                <x:String>3 - Introdução a Engenharia</x:String>
+                <x:String>4 - Projetos de Engenharia</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label x:Name="Label1" IsVisible="false"
+Text="Matricula realizada." TextColor="DarkGreen" />
+        <Label x:Name="Label2" IsVisible="false"
+Text="Nao foi possivel realizar a matricula" TextColor="Red" />
+
+        <Button x:Name="Button" Text="Matricula"
+VerticalOptions="EndAndExpand"
+HorizontalOptions="Center"
+Clicked="OnButtonClicked" />
+
+    </StackLayout>
+
+</ContentPage>
